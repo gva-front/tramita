@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificació de documents</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="header-content">
+
+        <div class="header-left">
+
+            <a href="https://www.gva.es/va/inici" target="_self">
+
+                <img
+                    src="images/logo-gva.png.png"
+                    alt="Logo Generalitat Valenciana"
+                    class="logo">
+
+            </a>
+
+            <h1>Verificació de documents</h1>
+
+        </div>
+
+        <div class="header-right">
+
+            <button id="lang-btn" type="button">
+
+                <span id="lang-text">VA</span> ▼
+
+            </button>
+
+            <ul id="lang-menu" class="hidden">
+
+                <li>Valencià</li>
+                <li>Castellano</li>
+                <li>English</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</header>
+
+<section class="csv-header">
+
+    <h2>Codi segur de verificació (CSV)</h2>
+
+</section>
+
+<main>
+
+    <section class="form-section">
+
+        <form id="csv-form">
+
+            <label for="csv">
+                Introduïsca el CSV
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="csv"
+                placeholder="Introduï el codi CSV"
+                autocomplete="off">
+
+            <label for="captcha">
+                Verificació de seguretat
+                <span class="required">*</span>
+            </label>
+
+            <div class="captcha-container">
+
+                <div class="captcha-box">
+
+                    <span class="captcha-text">
+                        ABC123
+                    </span>
+
+                </div>
+
+                <button
+    type="button"
+    id="refresh-captcha"
+    class="captcha-btn"
+    title="Recarregar">
+
+    🔄
+
+</button>
+
+                <button
+                    type="button"
+                    class="captcha-btn"
+                    title="Escoltar">
+
+                    🔊
+
+                </button>
+
+            </div>
+
+            <input
+                type="text"
+                id="captcha"
+                placeholder="Escriga el codi"
+                autocomplete="off">
+
+            <button
+                type="submit"
+                class="verify-btn">
+
+                <span class="check-icon">✔</span>
+
+                Verificar document
+
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="footer-gray">
+
+        <h3>Necessita ajuda?</h3>
+
+        <p>
+
+            <a href="#">Incidències tècniques</a>
+
+            <span class="external-icon">↗</span>
+
+        </p>
+
+    </div>
+
+    <div class="footer-black">
+
+        <div class="footer-left">
+
+            <img
+                src="images/escudo.png.png"
+                alt="Bandera Unió Europea"
+                class="logo-footer">
+
+            <div class="footer-text">
+
+                <p><strong>UNIÓ EUROPEA</strong></p>
+
+                <p>Fonds Europeu de Desenvolupament Regional</p>
+
+            </div>
+
+        </div>
+
+        <p class="footer-right">
+            © Generalitat Valenciana, 2025
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
